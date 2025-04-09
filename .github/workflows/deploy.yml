@@ -25,3 +25,6 @@ jobs:
             
             - name: Build   
               run: npm run build
+            
+            - name: Deploy to Vercel
+              run:  npx vercel --prod --yes --token ${{ secrets.SKYESHOP }}
